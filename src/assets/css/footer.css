@@ -1,0 +1,22 @@
+/* src/assets/css/footer.css */
+
+#footer {
+  clear: both;
+  margin: 0;
+  padding: 0.5em;
+  color: white;
+  background-color: #333;
+  border-top: 1px solid gray;
+  height: auto; /* Make height auto for responsive design */
+  position: fixed; /* Fixed positioning */
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  #footer {
+    font-size: 14px; /* Smaller font size for smaller screens */
+    padding: 1em;
+  }
+}

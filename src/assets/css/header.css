@@ -1,0 +1,44 @@
+.top {
+  background-color: rgb(24, 68, 157);
+  border-bottom-style: solid;
+  border-bottom-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Adjusted to space items evenly */
+  padding: 10px 20px;
+}
+
+.logo {
+  width: 10vw; /* Adjust size using viewport width */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 80px; /* Maximum width */
+  min-width: 30px; /* Minimum width */
+}
+
+.top h1 {
+  flex-grow: 1; /* Make h1 take available space */
+  text-align: center;
+  color: white;
+  margin: 0;
+  font-size: 1.5rem; /* Adjust font size as needed */
+}
+
+@media (max-width: 600px) {
+  .logo {
+    width: 8vw;
+  }
+
+  .top h1 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .logo {
+    width: 5vw;
+  }
+
+  .top h1 {
+    font-size: 2rem;
+  }
+}
